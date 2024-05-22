@@ -11,7 +11,7 @@ FEATURES_COLUMN = "scaled_feature"
 
 class Preprocessor:
     def __init__(self, data_config: DataConfig):
-        with open(data_config.features_path, "r") as features_file:
+        with open(data_config.feature_path, "r") as features_file:
             self.features = json.load(features_file)
 
         self.data_config = data_config

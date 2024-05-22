@@ -12,7 +12,7 @@ class KMeansConfig:
 @dataclasses.dataclass
 class DataConfig:
     data_path: str = dataclasses.field(default="data/openfood.csv")
-    features_path: str = dataclasses.field(default="configs/features.json")
+    feature_path: str = dataclasses.field(default="configs/features.json")
 
 
 @dataclasses.dataclass
